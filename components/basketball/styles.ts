@@ -50,9 +50,9 @@ const ImageBoxWrapper = styled.figure<StyleProps>`
     	top: 77px;
 	`}
 	${media.xl`
-		width: 840px;
-    	height: 688px;
-    	right: 0;
+		width: 735px;
+    	height: 600px;
+    	right: 40px;
     	top: 35px;
 	`}
 	
