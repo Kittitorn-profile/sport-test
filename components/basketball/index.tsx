@@ -1,14 +1,13 @@
 import React, { Fragment, useState, useEffect } from "react";
 import Image from "next/image";
 import Style from "./styles";
-import { FootBallProps } from "./interface";
-import imgBasketball from "@assets/images/basketballDesktop.png";
+import imgBasketball from "@assets/images/basketball.png";
 import CardItem from "../cardItem";
 import TitleSection from "../titleSection";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 
-const FootBallComponet: React.FC<FootBallProps> = () => {
+const BasketBallComponet: React.FC = () => {
 	const [screen, setScreen] = useState(0);
 
 	useEffect(() => {
@@ -19,9 +18,9 @@ const FootBallComponet: React.FC<FootBallProps> = () => {
 	}, [window]);
 
 	return (
-		<Style.FootBallSectionWrapper>
+		<Style.BasketBallSectionWrapper>
 			{screen > 767 ? (
-				<Style.FootBallWrapper>
+				<Style.BasketBallWrapper>
 					<Style.ImageBox>
 						<Style.ImageBoxWrapper>
 							<Image
@@ -61,7 +60,7 @@ const FootBallComponet: React.FC<FootBallProps> = () => {
 							isLeft
 						/>
 					</Fragment>
-				</Style.FootBallWrapper>
+				</Style.BasketBallWrapper>
 			) : (
 				<Fragment>
 					<TitleSection title={"PLAYERS"} isMobile />
@@ -112,8 +111,8 @@ const FootBallComponet: React.FC<FootBallProps> = () => {
 					</Style.CardWrapper>
 				</Fragment>
 			)}
-		</Style.FootBallSectionWrapper>
+		</Style.BasketBallSectionWrapper>
 	);
 };
 
-export default FootBallComponet;
+export default BasketBallComponet;

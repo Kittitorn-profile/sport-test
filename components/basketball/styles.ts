@@ -1,14 +1,14 @@
 import styled, { StyleProps } from "styled-components";
 import { media } from "styled-bootstrap-grid";
 
-const FootBallSectionWrapper = styled.section`
+const BasketBallSectionWrapper = styled.section`
 	padding-top: 4rem;
 	${media.lg`
 		padding-top: 5rem;
 	`}
 `;
 
-const FootBallWrapper = styled.div`
+const BasketBallWrapper = styled.div`
 	position: relative;
 	overflow: hidden;
 `;
@@ -118,8 +118,8 @@ const ImageWrapper = styled.figure<StyleProps>`
 `;
 
 export default {
-	FootBallSectionWrapper,
-	FootBallWrapper,
+	BasketBallSectionWrapper,
+	BasketBallWrapper,
 	ImageBox,
 	ImageBoxWrapper,
 	CardWrapper,

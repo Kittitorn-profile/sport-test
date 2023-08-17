@@ -36,7 +36,7 @@ const TitleText = styled.div<StyleProps>`
 
 const Description = styled.div<StyleProps>`
 	color: ${({ descColor }) => descColor || "#000000"};
-	padding-top: 0.5rem;
+	padding-top: 1rem;
 	font-weight: normal;
 `;
 

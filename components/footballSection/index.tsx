@@ -1,15 +1,13 @@
 import React, { Fragment, useState, useEffect } from "react";
 import Image from "next/image";
 import Style from "./styles";
-import { FootBallProps } from "./interface";
 import imgFootballer from "@assets/images/footballer.png";
 import CardItem from "../cardItem";
 import TitleSection from "../titleSection";
-// import Carousel from "../carousel";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 
-const FootBallComponet: React.FC<FootBallProps> = () => {
+const FootBallComponet: React.FC = () => {
 	const [screen, setScreen] = useState(0);
 
 	useEffect(() => {
