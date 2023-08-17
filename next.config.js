@@ -4,7 +4,6 @@ const nextConfig = {
 	swcMinify: true,
 	images: {
 		domains: [],
-		formats: ["image/avif", "image/webp"],
 	},
 };
 
