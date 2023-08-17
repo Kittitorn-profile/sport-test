@@ -1,0 +1,60 @@
+* {
+	box-sizing: border-box;
+	padding: 0;
+}
+
+html,
+body {
+	padding: 0;
+	margin: 0 !important;
+	font-family: "Roboto", sans-serif;
+}
+
+body {
+	color: rgb(var(--foreground-rgb));
+	background: #ffffff;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+@media (prefers-color-scheme: dark) {
+	html {
+		color-scheme: transparent;
+	}
+}
+
+.carousel .control-dots .dot {
+	transition: opacity 0.25s ease-in;
+	opacity: 0.3;
+	filter: alpha(opacity=30);
+	box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.9);
+	background: #fff;
+	border-radius: 50%;
+	width: 10px;
+	height: 10px;
+	cursor: pointer;
+	display: inline-block;
+	margin: 0 8px;
+}
+
+.carousel .control-dots .dot.selected,
+.carousel .control-dots .dot:hover {
+	transition: opacity 0.25s ease-in;
+	opacity: 0.3;
+	filter: alpha(opacity=30);
+	box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.9);
+	background: #5c3caf;
+	border-radius: 50%;
+	width: 10px;
+	height: 10px;
+	cursor: pointer;
+	display: inline-block;
+	margin: 0 8px;
+}
+
+.carousel .thumbs-wrapper {
+	display: none;
+}
